@@ -1,8 +1,11 @@
-import PropTypes from "prop-types";
 import React from "react";
-import Image from "next/image";
 
-const FurnitureGallery = ({ backgroundImage }) => {
+// Define the type for the props
+interface FurnitureGalleryProps {
+  backgroundImage?: string; // Optional background image URL (string)
+}
+
+const FurnitureGallery: React.FC<FurnitureGalleryProps> = ({ backgroundImage }) => {
   return (
     <section className="py-16 bg-gray-50">
       {/* Header */}
@@ -30,15 +33,9 @@ const FurnitureGallery = ({ backgroundImage }) => {
   );
 };
 
-// Define PropTypes for Component
-FurnitureGallery.propTypes = {
-  backgroundImage: PropTypes.string, // Optional background image URL
-};
-
-// Default Props
+// Default Props (for default background image URL)
 FurnitureGallery.defaultProps = {
   backgroundImage: "/Images/background.jpg", // Default image
 };
-
 
 export default FurnitureGallery;
