@@ -4,7 +4,6 @@ import Browse from "./Component/Browse";
 import OurProduct from "./Component/products";
 import Inspiration from "./Component/inspiration";
 import Furniture from "./Component/furniture"
-import Footer from "./Component/footer";
 
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
       <Inspiration/>
       <Furniture/>
       {/* <Show/> */}
-      <Footer/>
+      {/* <Footer/> */}
       
       
     </div>
