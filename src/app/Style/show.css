@@ -1,0 +1,75 @@
+
+.shopsect h3, .shopPara{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+  .shopsect .shopPara{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+  }
+
+
+  .imgshop{
+    /* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 316px;
+left: 0px;
+top: 100px;
+
+/* background: url(.jpg); */
+filter: blur(3px);
+
+  }
+
+  .shopsect{
+    /* Group 78 */
+
+position: absolute;
+width: 1440px;
+height: 316px;
+left: 0px;
+top: 100px;
+
+
+  }
+
+  .shopHead{
+    /* Group 55 */
+
+position: absolute;
+width: 124px;
+height: 72px;
+left: 658px;
+top: 221px;
+
+
+  }
+
+  .shopPara{
+    /* Group 56 */
+
+position: absolute;
+width: 121px;
+height: 24px;
+left: 660px;
+top: 295px;
+
+
+  }
+
+  .showblowbar{
+    /* Rectangle 20 */
+
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 417px;
+
+background: #F9F1E7;
+
+  }

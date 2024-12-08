@@ -1,0 +1,42 @@
+/* ---------------------- HERO SECTION ----------------------------------- */
+.heroImage {
+  /* banner */
+
+/* position: absolute; */
+/* width: 1440px; */
+/* height: 812.53px; */
+left: 0px;
+top: 0px;
+
+}
+
+.heroText {
+  width: 34rem;
+  /* height: 16rem; */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  border-radius: 6px;
+  padding: 4rem;
+  line-height: 2rem;
+}
+
+.heroText h6 {
+  font-weight: bold;
+}
+
+.heroText h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #b88e2f;
+}
+
+/* .heroText p{
+  line-height: none;
+} */
+
+.heroText .buyBtn {
+  background-color: #b88e2f;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  color: white;
+}
