@@ -39,7 +39,7 @@ export default function Header() {
         </div>
 
         <div className="icons">
-          <div className="icon1"><MdPersonOutline /></div>
+          <span className="icon1"><MdPersonOutline /></span>
         <span className="icon2"><CiSearch /></span>
         <span className="icon3"><GoHeart /></span>
         <span className="icon4"><AiOutlineShoppingCart /></span>
