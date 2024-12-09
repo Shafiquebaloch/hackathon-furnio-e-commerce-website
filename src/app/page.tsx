@@ -1,20 +1,25 @@
 import  Link  from 'next/link'
 import Image from 'next/image'
-import product1 from "../../../Public/Images/product1.png";
-import product2 from "../../../Public/Images/product2.png";
-import product3 from "../../../Public/Images/product3.png";
-import product4 from "../../../Public/Images/product4.jpg";
-import product5 from "../../../Public/Images/product5.png";
-import product6 from "../../../Public/Images/product6.png";
-import product7 from "../../../Public/Images/product7.jpg";
-import product8 from "../../../Public/Images/product8.jpeg";
-
+import backgroundImg from "../../Public/Images/background.jpg"
+import img1 from "../../Public/Images/browse1.png"
+import img2 from "../../Public/Images/browse2.png"
+import img3 from "../../Public/Images/browes3.png"
+import product1 from "../../Public/Images/product1.png";
+import product2 from "../../Public/Images/product2.png";
+import product3 from "../../Public/Images/product3.png";
+import product4 from "../../Public/Images/product4.jpg";
+import product5 from "../../Public/Images/product5.png";
+import product6 from "../../Public/Images/product6.png";
+import product7 from "../../Public/Images/product7.jpg";
+import product8 from "../../Public/Images/product8.jpeg";
+import inspirations from "../../Public/Images/inspiration.png"
+import inspiration2 from "../../Public/Images/inspiration2.png"
 export default function Page(){
   return (
     <>
       <div>
         <Image
-          src={"/Images/background.jpg"}
+          src={backgroundImg}
           alt="hero-section"
           width={1440}
           height={316}
@@ -26,7 +31,7 @@ export default function Page(){
       <div className='flex flex-wrap items-center justify-center mt-16 gap-8'>
         <div className='flex flex-col items-center max-w-[300px] sm:max-w-[100%]'>
           <Image
-            src={"/Images/browse1.png"}
+            src={img1}
             alt='img-1'
             width={381}
             height={480}
@@ -37,7 +42,7 @@ export default function Page(){
 
         <div className='flex flex-col items-center max-w-[300px] sm:max-w-[100%]'>
           <Image
-            src={"/Images/browse2.png"}
+            src={img2}
             alt='img-2'
             width={381}
             height={480}
@@ -48,7 +53,7 @@ export default function Page(){
 
         <div className='flex flex-col items-center max-w-[300px] sm:max-w-[100%]'>
           <Image
-            src={"/Images/browes3.png"}
+            src={img3}
             alt='img-3'
             width={381}
             height={480}
@@ -76,7 +81,7 @@ export default function Page(){
           </div>
           <div className='relative w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src="/Images/product2.png"
+              src={product2}
               alt="chair-img"
               width={285}
               height={301}
@@ -93,21 +98,21 @@ export default function Page(){
               <button className='text-[#B88E2F] text-[16px] font-semibold bg-[#FFFFFF] w-[202px] h-[48px]'>Add to cart</button>
               <div className='flex items-center justify-around gap-4 mt-6 text-[#FFFFFF]'>
                 <Image
-                  src={"/images/share.svg"}
+                  src={product3}
                   alt='icon-1'
                   width={16}
                   height={16}
                 />
                 <span>Share</span>
                 <Image
-                  src={"/images/arrow.svg"}
+                  src={product4}
                   alt='icon-2'
                   width={16}
                   height={16}
                 />
                 <span>Compare</span>
                 <Image
-                  src={"/images/heart.svg"}
+                  src={product5}
                   alt='icon-3'
                   width={16}
                   height={16}
@@ -118,7 +123,7 @@ export default function Page(){
           </div>
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product4.jpg"}
+              src={product6}
               alt='sofa-img'
               width={285}
               height={301}
@@ -130,7 +135,7 @@ export default function Page(){
           </div>
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product5.png"}
+              src={product7}
               alt='multi-sofa-img'
               width={285}
               height={301}
@@ -142,7 +147,7 @@ export default function Page(){
 
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product6.png"}
+              src={product8}
               alt='lamp-img'
               width={285}
               height={301}
@@ -153,7 +158,7 @@ export default function Page(){
           </div>
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product7.jpg"}
+              src={product2}
               alt='black-sofa-img'
               width={285}
               height={301}
@@ -164,7 +169,7 @@ export default function Page(){
           </div>
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product8.jpeg"}
+              src={product3}
               alt='pic-sofa-img'
               width={285}
               height={301}
@@ -176,7 +181,7 @@ export default function Page(){
           </div>
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product8.jpeg"}
+              src={product1}
               alt='orange-sofa-img'
               width={285}
               height={301}
@@ -210,7 +215,7 @@ export default function Page(){
 
           <div className='mt-8 lg:mt-0'>
             <Image
-              src="/Images/inspiration.png"
+              src={inspirations}
               alt="last-1"
               width={404}
               height={582}
@@ -220,7 +225,7 @@ export default function Page(){
 
           <div className='mt-8 lg:mt-0'>
             <Image
-              src="/Images/inspiration2.png"
+              src={inspiration2}
               alt="last-1"
               width={372}
               height={486}
@@ -237,14 +242,14 @@ export default function Page(){
 
             <div className="flex flex-col items-center lg:items-start gap-5">
               <Image
-                src="/Images/product1.png"
+                src={product1}
                 alt="last-1"
                 width={451}
                 height={312}
                 className="mb-5"
               />
               <Image
-                src="/Images/product2.png"
+                src={product2}
                 alt="last-2"
                 width={451}
                 height={312}
@@ -253,7 +258,7 @@ export default function Page(){
 
             <div className="flex justify-center">
               <Image
-                src="/Images/product3.png"
+                src={product3}
                 alt="last-3"
                 width={295}
                 height={392}
@@ -262,7 +267,7 @@ export default function Page(){
 
             <div className="flex flex-col items-center lg:items-start gap-5">
               <Image
-                 src="/Images/product4.jpg"
+                 src={product4}
                 alt="last-4"
                 width={420}
                 height={348}
@@ -270,13 +275,13 @@ export default function Page(){
               />
               <div className="flex justify-between gap-5">
                 <Image
-                   src="/Images/product5.png"
+                   src={product4}
                   alt="last-5"
                   width={178}
                   height={242}
                 />
                 <Image
-                   src="/Images/product6.png"
+                   src={product5}
                   alt="last-6"
                   width={258}
                   height={196}
@@ -286,7 +291,7 @@ export default function Page(){
 
             <div className="flex justify-center">
               <Image
-                 src="/Images/product7.jpg"
+                 src={product6}
                 alt="last-7"
                 width={425}
                 height={433}

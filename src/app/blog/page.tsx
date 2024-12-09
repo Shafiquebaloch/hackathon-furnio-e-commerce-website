@@ -1,5 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import shopping from "../../../Public/Images/shopimg.jpg"
+import laptop from "../../../Public/Images/laptop.jpg"
+import draw from "../../../Public/Images/draw.jpg"
+import book from "../../../Public/Images/book.jpg"
 import { RiAdminLine } from "react-icons/ri";
 import { BsCalendar2DateFill } from "react-icons/bs";
 import { FaTag } from "react-icons/fa6";
@@ -12,7 +16,7 @@ const BlogPage = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Images/shopimg.jpg"  // Corrected path with leading slash
+          src={shopping}  // Corrected path with leading slash
           alt="Shop header background"
           fill
           className="object-cover brightness-95"
@@ -47,7 +51,7 @@ const BlogPage = () => {
         <div className="lg:w-1/2 lg:ml-12">
           {/* Blog Post 1 */}
           <Image
-            src={"/Images/laptop.jpg"}
+            src={laptop}
             alt="laptop-img"
             width={817}
             height={500}
@@ -74,7 +78,7 @@ const BlogPage = () => {
 
           {/* Blog Post 2 */}
           <Image
-            src={"/Images/draw.jpg"}
+            src={draw}
             alt="drawing-img"
             width={817}
             height={500}
@@ -98,7 +102,7 @@ const BlogPage = () => {
 
           {/* Blog Post 3 */}
           <Image
-            src={"/Images/book.jpg"}
+            src={book}
             alt="books-img"
             width={817}
             height={500}
