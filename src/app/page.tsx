@@ -1,5 +1,13 @@
 import  Link  from 'next/link'
 import Image from 'next/image'
+import product1 from "../../../Public/Images/product1.png";
+import product2 from "../../../Public/Images/product2.png";
+import product3 from "../../../Public/Images/product3.png";
+import product4 from "../../../Public/Images/product4.jpg";
+import product5 from "../../../Public/Images/product5.png";
+import product6 from "../../../Public/Images/product6.png";
+import product7 from "../../../Public/Images/product7.jpg";
+import product8 from "../../../Public/Images/product8.jpeg";
 
 export default function Page(){
   return (
@@ -56,7 +64,7 @@ export default function Page(){
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mx-auto max-w-screen-xl'>
           <div className='w-[285px] h-[446px] bg-[#F4F5F7] mx-auto'>
             <Image
-              src={"/Images/product1.png"}
+              src={product1}
               alt='table-img'
               width={285}
               height={301}
