@@ -24,7 +24,7 @@ const ContactPage = () => {
       {/* Content */}
       <div className="relative z-10 text-center space-y-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-          Shop
+          Contact
         </h1>
         
         {/* Breadcrumb Navigation */}
@@ -36,7 +36,7 @@ const ContactPage = () => {
             Home
           </Link>
           <span className="text-gray-400">&gt;</span>
-          <span className="text-gray-800">Shop</span>
+          <span className="text-gray-800">Contact</span>
         </nav>
       </div>
     </div>
