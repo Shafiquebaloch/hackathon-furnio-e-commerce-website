@@ -11,7 +11,7 @@ const ShopPage = () => {
         {/* Replace img with next/image */}
         <div className="productCard">
           <Image
-            src="/Images/product1.jpg"  // Your image source
+            src="/Images/product1.png"  // Your image source
             alt="Description of product 1"  // Descriptive alt text
             width={300}                   // Set the width for optimization
             height={300}                  // Set the height for optimization
@@ -24,14 +24,14 @@ const ShopPage = () => {
         {/* Another Product Example */}
         <div className="productCard">
           <Image
-            src="/Images/product2.jpg"
+            src="/Images/product2.png"
             alt="Description of product 2"
             width={300}
             height={300}
             layout="intrinsic"
           />
-          <h3 className="productName">Product Name 2</h3>
-          <p className="productDescription">Description for product 2</p>
+          {/* <h3 className="productName">Product Name 2</h3>
+          <p className="productDescription">Description for product 2</p> */}
         </div>
       </div>
     </div>
