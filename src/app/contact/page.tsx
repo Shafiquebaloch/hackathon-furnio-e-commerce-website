@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import shopping from "../../../Public/Images/shopimg.jpg"
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdClock } from "react-icons/io";
@@ -14,7 +15,7 @@ const ContactPage = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Images/shopimg.jpg"  // Corrected path with leading slash
+          src={shopping}  // Corrected path with leading slash
           alt="Shop header background"
           fill
           className="object-cover brightness-95"

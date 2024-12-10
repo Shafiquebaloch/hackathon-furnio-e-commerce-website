@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import shopping from "../../../Public/Images/shopimg.jpg"
 
 export default function ShopHeader() {
   return (
@@ -7,7 +8,7 @@ export default function ShopHeader() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Images/shopimg.jpg"  // Corrected path with leading slash
+          src={shopping}  // Corrected path with leading slash
           alt="Shop header background"
           fill
           className="object-cover brightness-95"
