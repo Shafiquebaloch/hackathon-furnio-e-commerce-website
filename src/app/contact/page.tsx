@@ -1,7 +1,10 @@
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdClock } from "react-icons/io";
+
 
 
 const ContactPage = () => {
@@ -54,27 +57,29 @@ const ContactPage = () => {
                 <div className="flex flex-col gap-8 lg:w-1/2">
                     {[
                         {
-                            img: "/images/location.svg",
+                            
+                            icon:<FaLocationDot />,
+
                             title: "Address",
                             desc: "236 5th SE Avenue, New York NY10000, United States",
                         },
                         {
-                            img: "/images/call.svg",
+                           icon: <FaPhoneAlt />,
                             title: "Phone",
                             desc: "Mobile: +(84) 546-6789\nHotline: +(84) 456-6789",
                         },
                         {
-                            img: "/images/clock.svg",
+                            icon:<IoMdClock />,
                             title: "Working Time",
                             desc: "Monday-Friday: 9:00 - 22:00\nSaturday-Sunday: 9:00 - 21:00",
                         },
                     ].map((info, index) => (
                         <div key={index} className="flex items-start gap-4">
-                            <Image src={info.img} alt={`${info.title}-icon`} width={22} height={28} />
-                            <div>
-                                <h2 className="text-[18px] sm:text-[20px] lg:text-[24px] font-semibold">{info.title}</h2>
-                                <p className="text-[14px] sm:text-[16px] text-gray-700 whitespace-pre-line">
-                                    {info.desc}
+                          {info.icon} {/* Render the icon here */}
+                          <div>
+                            <h2 className="text-[18px] sm:text-[20px] lg:text-[24px] font-semibold">{info.title}</h2>
+                            <p className="text-[14px] sm:text-[16px] text-gray-700 whitespace-pre-line">
+                              {info.desc}
                                 </p>
                             </div>
                         </div>

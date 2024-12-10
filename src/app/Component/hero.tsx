@@ -34,7 +34,7 @@ const Hero = () => {
           </p>
           <div className="text-center md:text-left">
             <Link
-              href="/shop"
+              href="/Shop"
               className="inline-block bg-[#B8860B] px-8 py-4 text-center font-semibold text-white transition-colors hover:bg-[#986F0B]"
             >
               BUY NOW

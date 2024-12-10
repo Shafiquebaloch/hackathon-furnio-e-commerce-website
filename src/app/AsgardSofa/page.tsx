@@ -1,5 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
+import sofa from "../../../Public/Images/asgardSofa.png"
+import sofa1 from "../../../Public/Images/sofa1.png"
+import sofa2 from "../../../Public/Images/sofa2.png"
+import outdoor from "../../../Public/Images/outdoor.png"
+import outdoor2 from "../../../Public/Images/outdoor2.png"
+import outdoor3 from "../../../Public/Images/outdoor3.png"
+import outdoor4 from "../../../Public/Images/outdoor4.png"
+import { FaFacebookSquare } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaTwitter } from "react-icons/fa";
+
+
 
 
 const AsgaardPage = () => {
@@ -20,23 +32,41 @@ const AsgaardPage = () => {
             <div className="flex flex-col lg:flex-row items-start justify-evenly mt-16 px-4 lg:px-24 gap-12">
                 {/* Sidebar Thumbnails */}
                 <div className="flex flex-col gap-4">
-                    {[1, 2, 3, 4].map((num) => (
-                        <div key={num}>
-                            <Image
-                                src={`/images/sec${num}.png`}
-                                alt={`sec${num}`}
-                                width={76}
-                                height={80}
-                                className="w-20 h-20 object-contain"
-                            />
-                        </div>
-                    ))}
+                <Image
+                        src={outdoor}
+                        alt="outdoor"
+                        width={150}
+                        height={200}
+                        className="max-w-full h-auto"
+                    />
+                     <Image
+                        src={outdoor2}
+                        alt="outdoor"
+                        width={150}
+                        height={200}
+                        className="max-w-full h-auto"
+                    />
+                       <Image
+                        src={outdoor3}
+                        alt="outdoor"
+                        width={150}
+                        height={200}
+                        className="max-w-full h-auto"
+                    />
+                        <Image
+                        src={outdoor4}
+                        alt="outdoor"
+                        width={150}
+                        height={200}
+                        className="max-w-full h-auto"
+                    />
                 </div>
+                
 
                 {/* Product Image Container */}
                 <div className="bg-[#F9F1E7] w-full lg:w-1/2 h-auto flex items-center justify-center p-4 rounded-md">
                     <Image
-                        src="/Images/asgardSofa.png"
+                        src={sofa}
                         alt="sofi"
                         width={500}
                         height={600}
@@ -50,12 +80,13 @@ const AsgaardPage = () => {
                     <span className="text-2xl text-[#9F9F9F]">Rs. 250,000.00</span>
 
                     <div className="flex items-center gap-3 mt-4">
-                        <Image
-                            src="/images/five-star.png"
-                            alt="star rating"
-                            width={124}
-                            height={20}
-                        />
+                    <div className="flex">
+  <                  span className="text-2xl text-yellow-400">&#9733;</span>
+                     <span className="text-2xl text-yellow-400">&#9733;</span>
+                     <span className="text-2xl text-yellow-400">&#9733;</span>
+                    <span className="text-2xl text-yellow-400">&#9733;</span>
+                    <span className="text-2xl text-yellow-400">&#9733;</span>
+</div>
                         <div className="border-l border-[#9F9F9F] h-3"></div>
                         <span className="text-[#9F9F9F] text-sm">5 Customer Reviews</span>
                     </div>
@@ -101,6 +132,7 @@ const AsgaardPage = () => {
                         <button className="w-52 h-16 bg-transparent text-black rounded-2xl border border-black flex items-center justify-center gap-2 mt-4 sm:mt-0 sm:ml-3">
                             <span>+</span>
                             <span>Compare</span>
+                            
                         </button>
                     </div>
 
@@ -119,24 +151,9 @@ const AsgaardPage = () => {
                             <h4>: Sofa, Chair, Home, Shop</h4>
                             <div className='flex items-center justify-start gap-3'>
                                 :
-                                <Image
-                                    src={"/Images/sofa2.png"}
-                                    alt='fb'
-                                    width={20}
-                                    height={20}
-                                />
-                                <Image
-                                    src={"/Images/sofa2.png"}
-                                    alt='in'
-                                    width={20}
-                                    height={20}
-                                />
-                                <Image
-                                    src={"/Images/sofa2.png"}
-                                    alt='twi'
-                                    width={20}
-                                    height={20}
-                                />
+                                <FaFacebookSquare size={20} />
+                                <IoLogoLinkedin size={20} />
+                                <FaTwitter size={20} />
                             </div>
                         </div>
                     </div>
@@ -162,13 +179,13 @@ const AsgaardPage = () => {
 
                 <div className='flex flex-col gap-6 sm:flex-row items-center justify-around mt-10'>
                     <Image
-                        src={"/Images/sofa2.png"}
+                        src={sofa1}
                         alt='sofa1'
                         width={605}
                         height={348}
                     />
                     <Image
-                        src={"/Images/sofa2.png"}
+                        src={sofa2}
                         alt='sofa2'
                         width={605}
                         height={348}

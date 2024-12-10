@@ -1,14 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import shopping from "../../../Public/Images/shopimg.jpg"
-import laptop from "../../../Public/Images/laptop.jpg"
-import draw from "../../../Public/Images/draw.jpg"
-import book from "../../../Public/Images/book.jpg"
 import { RiAdminLine } from "react-icons/ri";
 import { BsCalendar2DateFill } from "react-icons/bs";
 import { FaTag } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import Link from 'next/link';
+import shopping from "../../../Public/Images/shopimg.jpg"
+import laptop from "../../../Public/Images/laptop.jpg"
+import draw from "../../../Public/Images/draw.jpg"
+import book from "../../../Public/Images/book.jpg"
+import pro1 from "../../../Public/Images/pro1.jpg"
+import pro2 from "../../../Public/Images/pro2.jpg"
+import pro3 from "../../../Public/Images/pro3.jpg"
+import pro4 from "../../../Public/Images/pro4.jpg"
+import pro5 from "../../../Public/Images/pro5.jpg"
+
 const BlogPage = () => {
   return (
     <>
@@ -154,21 +160,22 @@ const BlogPage = () => {
 
           {/* Recent Posts */}
           <h1 className="text-[24px] font-semibold mb-8">Recent Posts</h1>
-          {[
-            { src: '/Images/drawing.jpg', title: 'Going all-in with millennial design' },
-            { src: '/Images/pro2.jpg', title: 'Exploring new ways of decorating' },
-            { src: '/Images/pro3.jpg', title: 'Handmade pieces that took time to make' },
-            { src: '/images/pro4.jpg', title: 'Modern home in Milan' },
-            { src: '/images/pro1.jpg', title: 'Colorful office redesign' },
-          ].map((post, index) => (
-            <div key={index} className="flex items-center justify-between gap-8">
-              <Image src={post.src} alt={`post${index + 1}`} width={80} height={80} />
-              <div className="flex flex-col">
-                <h1 className="font-semibold text-[14px] w-[119px]">{post.title}</h1>
-                <span className="text-[#9F9F9F]">03 Aug 2022</span>
-              </div>
-            </div>
-          ))}
+{[
+  { src: pro1, title: 'Going all-in with millennial design' },
+  { src: pro2, title: 'Exploring new ways of decorating' },
+  { src: pro3, title: 'Handmade pieces that took time to make' },
+  { src: pro4, title: 'Modern home in Milan' },
+  { src: pro5, title: 'Colorful office redesign' },
+].map((post, index) => (
+  <div key={index} className="flex items-center justify-between gap-8">
+    <Image src={post.src} alt={`post${index + 1}`} width={80} height={80} />
+    <div className="flex flex-col">
+      <h1 className="font-semibold text-[14px] w-[119px]">{post.title}</h1>
+      <span className="text-[#9F9F9F]">03 Aug 2022</span>
+    </div>
+  </div>
+))}
+
         </div>
       </div>
 
