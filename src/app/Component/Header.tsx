@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../../../Public/Images/header.png"
 import { MdPersonOutline } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { GoHeart } from "react-icons/go";
@@ -18,7 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full h-[80px] bg-white flex items-center justify-between px-4 md:px-8 lg:px-16 shadow-md z-50">
       <div className="flex items-center">
         <Image
-          src={"/Images/header.png"}
+          src={logo}
           alt="logo"
           width={160}
           height={40}
@@ -34,42 +35,28 @@ const Navbar = () => {
         <Link href={"../Shop"} className="hover:text-gray-500 transition">
           Shop
         </Link>
-        <Link href={"/blog"} className="hover:text-gray-500 transition">
+        <Link href={"../blog"} className="hover:text-gray-500 transition">
           Blog
         </Link>
-        <Link href={"/contact"} className="hover:text-gray-500 transition">
+        <Link href={"../contact"} className="hover:text-gray-500 transition">
           Contact
         </Link>
       </div>
 
       <div className="hidden sm:flex items-center space-x-4">
         <div className="w-6 h-6 cursor-pointer hover:opacity-80">
-        <span className="icon1"><MdPersonOutline /></span>
+          <span className="icon1"><MdPersonOutline /></span>
         </div>
-         <span className="w-6 h-6 cursor-pointer hover:opacity-80"><CiSearch /></span>
-         < Link href={"/AsgardSofa"}>
-        <span className="w-6 h-6 cursor-pointer hover:opacity-80"><GoHeart /></span>
+        <span className="w-6 h-6 cursor-pointer hover:opacity-80"><CiSearch /></span>
+        <Link href={"/AsgardSofa"}>
+          <span className="w-6 h-6 cursor-pointer hover:opacity-80"><GoHeart /></span>
         </Link>
         <Link href={"/cart"}>
-        <span className="w-6 h-6 cursor-pointer hover:opacity-80"><AiOutlineShoppingCart /></span>
-        
+          <span className="w-6 h-6 cursor-pointer hover:opacity-80"><AiOutlineShoppingCart /></span>
         </Link>
       </div>
 
-      <div className="md:hidden flex items-center justify-around gap-3"> 
-      <div className="hidden sm:flex items-center space-x-4">
-        <div className="w-6 h-6 cursor-pointer hover:opacity-80">
-        <span className="icon1"><MdPersonOutline /></span>
-        </div>
-      <span className="w-6 h-6 cursor-pointer hover:opacity-80"><CiSearch /></span>
-         < Link href={"/Asgardsofa"}>
-        <span className="w-6 h-6 cursor-pointer hover:opacity-80"><GoHeart /></span>
-        </Link>
-        <Link href={"/cart"}>
-        <span className="w-6 h-6 cursor-pointer hover:opacity-80"><AiOutlineShoppingCart /></span>
-        
-        </Link>
-      </div>
+      <div className="md:hidden flex items-center justify-between gap-3">
         <button
           aria-label="Toggle menu"
           className="text-gray-800 focus:outline-none hover:text-gray-500"
@@ -93,17 +80,17 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="absolute top-[80px] left-0 w-full bg-white shadow-md md:hidden flex flex-col space-y-4 p-4">
+        <div className="absolute top-[80px] left-0 w-full bg-white shadow-md md:hidden flex flex-col space-y-4 p-4 z-40">
           <Link href={"/"} className="hover:text-gray-500 transition">
             Home
           </Link>
-          <Link href={"/shop"} className="hover:text-gray-500 transition">
+          <Link href={"../Shop"} className="hover:text-gray-500 transition">
             Shop
           </Link>
-          <Link href={"/blog"} className="hover:text-gray-500 transition">
+          <Link href={"../blog"} className="hover:text-gray-500 transition">
             Blog
           </Link>
-          <Link href={"/contact"} className="hover:text-gray-500 transition">
+          <Link href={"../contact"} className="hover:text-gray-500 transition">
             Contact
           </Link>
         </div>
