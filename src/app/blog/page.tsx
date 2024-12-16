@@ -178,9 +178,11 @@ const BlogPage = () => {
 
         </div>
       </div>
+  
+      
 
       {/* Pagination */}
-      <div className="flex items-center justify-center gap-2 lg:gap-8 mt-10 lg:mt-14">
+      {/* <div className="flex items-center justify-center gap-2 lg:gap-8 mt-10 lg:mt-14">
         {['1', '2', '3', 'Next'].map((item) => (
           <div
             key={item}
@@ -190,7 +192,8 @@ const BlogPage = () => {
             {item}
           </div>
         ))}
-      </div>
+      </div> */}
+      
     </>
   );
 };

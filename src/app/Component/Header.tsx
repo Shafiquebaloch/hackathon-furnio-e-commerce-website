@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../Public/Images/header.png"
+import logo from "../../../Public/Images/header.png";
 import { MdPersonOutline } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { GoHeart } from "react-icons/go";
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full h-[80px] bg-white flex items-center justify-between px-4 md:px-8 lg:px-16 shadow-md z-50">
-      <div className="flex items-center">
+      <div className="flex items-center space-x-4">
         <Image
           src={logo}
           alt="logo"
@@ -25,9 +25,10 @@ const Navbar = () => {
           height={40}
           className="w-20 h-auto ml-4"
         />
-        <div className="w-[130px] h-[41px] font-montserrat font-bold text-[34px] leading-[41px] text-black flex-none order-1 flex-grow-0">Furnio</div>
+        <div className="text-[34px] font-montserrat font-bold text-black">Furnio</div>
       </div>
 
+      {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-6 text-gray-800">
         <Link href={"/"} className="hover:text-gray-500 transition">
           Home
@@ -43,19 +44,21 @@ const Navbar = () => {
         </Link>
       </div>
 
+      {/* Desktop Icons */}
       <div className="hidden sm:flex items-center space-x-4">
         <div className="w-6 h-6 cursor-pointer hover:opacity-80">
-          <span className="icon1"><MdPersonOutline /></span>
+          <MdPersonOutline />
         </div>
-        <span className="w-6 h-6 cursor-pointer hover:opacity-80"><CiSearch /></span>
+        <CiSearch className="w-6 h-6 cursor-pointer hover:opacity-80" />
         <Link href={"/AsgardSofa"}>
-          <span className="w-6 h-6 cursor-pointer hover:opacity-80"><GoHeart /></span>
+          <GoHeart className="w-6 h-6 cursor-pointer hover:opacity-80" />
         </Link>
         <Link href={"/cart"}>
-          <span className="w-6 h-6 cursor-pointer hover:opacity-80"><AiOutlineShoppingCart /></span>
+          <AiOutlineShoppingCart className="w-6 h-6 cursor-pointer hover:opacity-80" />
         </Link>
       </div>
 
+      {/* Mobile Hamburger Button */}
       <div className="md:hidden flex items-center justify-between gap-3">
         <button
           aria-label="Toggle menu"
@@ -79,6 +82,7 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="absolute top-[80px] left-0 w-full bg-white shadow-md md:hidden flex flex-col space-y-4 p-4 z-40">
           <Link href={"/"} className="hover:text-gray-500 transition">
@@ -93,6 +97,20 @@ const Navbar = () => {
           <Link href={"../contact"} className="hover:text-gray-500 transition">
             Contact
           </Link>
+
+          {/* Mobile Icons */}
+          <div className="flex items-center justify-between space-x-4 mt-4">
+            <div className="w-6 h-6 cursor-pointer hover:opacity-80">
+              <MdPersonOutline />
+            </div>
+            <CiSearch className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            <Link href={"/AsgardSofa"}>
+              <GoHeart className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            </Link>
+            <Link href={"/cart"}>
+              <AiOutlineShoppingCart className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            </Link>
+          </div>
         </div>
       )}
     </nav>
