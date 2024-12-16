@@ -45,18 +45,22 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Icons */}
+      {/* <div className="hidden sm:flex items-center space-x-4"> */}
       <div className="hidden sm:flex items-center space-x-4">
-        <div className="w-6 h-6 cursor-pointer hover:opacity-80">
-          <MdPersonOutline />
-        </div>
-        <CiSearch className="w-6 h-6 cursor-pointer hover:opacity-80" />
-        <Link href={"/AsgardSofa"}>
-          <GoHeart className="w-6 h-6 cursor-pointer hover:opacity-80" />
-        </Link>
-        <Link href={"/cart"}>
-          <AiOutlineShoppingCart className="w-6 h-6 cursor-pointer hover:opacity-80" />
-        </Link>
-      </div>
+            {/* <div className="w-6 h-6 cursor-pointer hover:opacity-80"> */}
+            <Link href={"../contact"}>
+              <MdPersonOutline className="w-6 h-6 cursor-pointer hover:opacity-80" />
+              </Link>
+              <Link href={"/Shop"}>
+            <CiSearch className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            </Link>
+            <Link href={"/AsgardSofa"}>
+              <GoHeart className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            </Link>
+            <Link href={"/cart"}>
+              <AiOutlineShoppingCart className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            </Link>
+          </div>
 
       {/* Mobile Hamburger Button */}
       <div className="md:hidden flex items-center justify-between gap-3">
@@ -100,10 +104,13 @@ const Navbar = () => {
 
           {/* Mobile Icons */}
           <div className="flex items-center justify-between space-x-4 mt-4">
-            <div className="w-6 h-6 cursor-pointer hover:opacity-80">
-              <MdPersonOutline />
-            </div>
+            {/* <div className="w-6 h-6 cursor-pointer hover:opacity-80"> */}
+            <Link href={"../contact"}>
+              <MdPersonOutline className="w-6 h-6 cursor-pointer hover:opacity-80" />
+              </Link>
+              <Link href={"/Shop"}>
             <CiSearch className="w-6 h-6 cursor-pointer hover:opacity-80" />
+            </Link>
             <Link href={"/AsgardSofa"}>
               <GoHeart className="w-6 h-6 cursor-pointer hover:opacity-80" />
             </Link>

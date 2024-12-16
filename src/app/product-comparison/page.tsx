@@ -22,7 +22,7 @@ const ProductPage = () => {
         </div>
 
         <div className="relative z-10 text-center space-y-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Product Comparison</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">Product Comparison</h1>
           
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center justify-center space-x-2 text-sm md:text-base">
@@ -43,7 +43,7 @@ const ProductPage = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="flex  w-full sm:w-2/3 justify-between gap-6">
+        <div className="flex flex-wrap w-full sm:w-2/3 justify-between gap-6">
           {/* Product Card 1 */}
           <div className="flex flex-col gap-2 w-full sm:w-1/3">
             <Image
@@ -99,7 +99,7 @@ const ProductPage = () => {
         <div className="w-full sm:w-1/4 mt-8 sm:mt-0">
           <h1 className="text-xl sm:text-2xl font-semibold">Add a Product</h1>
           <div className="w-full sm:w-[200px] bg-[#B88E2F] text-white mt-4 sm:mt-6 flex justify-center items-center h-[39px]">
-            <button className="w-full sm:w-auto">Choose a Product</button>
+            <button className="w-full">Choose a Product</button>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@ const ProductPage = () => {
         {/* Product Info Column 1 */}
         <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
           <h4>Foam</h4>
-          <h4>Bright Grey & Lion</h4>
+          <h4>Matte</h4>
           <h4>No</h4>
           <h4>280 KG</h4>
           <h4>India</h4>
@@ -184,7 +184,7 @@ const ProductPage = () => {
           <h4>Domestic Warranty</h4>
         </div>
 
-        {/* Column 2 - Warranty Details for Product 1 */}
+     
         <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
           <h4>1 Year Manufacturing Warranty</h4>
           <h4>For Warranty Claims or Any Product Related Issues Please Email at operations@trevifurniture.com</h4>
@@ -194,7 +194,7 @@ const ProductPage = () => {
           <button className="w-full sm:w-[215px] h-[50px] bg-[#B88E2F] text-white mt-6 sm:mt-10 rounded-lg shadow-lg mb-6">Add To Cart</button>
         </div>
 
-        {/* Column 3 - Warranty Details for Product 2 */}
+      
         <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
           <h4>1.2 Year Manufacturing Warranty</h4>
           <h4>For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</h4>
