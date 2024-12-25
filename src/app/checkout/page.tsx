@@ -42,39 +42,44 @@ const CheckOutPage = () => {
     </div>
             <div className="container mx-auto px-4 lg:px-12 mt-16">
                 <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
-                    {/* Left Side: Billing Form */}
-                    <div className="container mx-auto px-4 lg:px-12 mt-16">
+  {/* Left Side: Billing Form */}
+  <div className="container mx-auto px-4 lg:px-12 mt-16">
   <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
+    
+    
+    
+    
     {/* Left Side: Billing Form */}
     <div className="w-full lg:w-[60%]">
-      <h1 className="text-[36px] font-semibold mb-5">Billing details</h1>
-      
-      
-      <div className="flex flex-wrap items-center justify-start gap-6">
-      <div className="flex items-center justify-between gap-6">
-  <div className="w-full sm:w-auto">
+    <h1 className="text-[36px] font-semibold mb-5">Billing details</h1>  
+  
+    <div className="flex flex-wrap items-center justify-start gap-6">
+    <div className="flex items-center justify-between gap-6">
+    
+    
+    
+    <div className="w-full sm:w-auto">
     <label htmlFor="first-name" className="block text-lg font-medium">
       First Name
     </label>
     <input
       id="first-name"
       type="text"
-      className="w-full sm:w-[211px] h-[75px] border border-black rounded-md mt-2"
-    />
+      className="w-full sm:w-[211px] h-[75px] border border-black rounded-md mt-2"/>
   </div>
+
+
   <div className="w-full sm:w-auto">
-    <label htmlFor="last-name" className="block text-lg font-medium">
+  <label htmlFor="last-name" className="block text-lg font-medium">
       Last Name
     </label>
     <input
       id="last-name"
       type="text"
-      className="w-full sm:w-[211px] h-[75px] border border-black rounded-md mt-2"
-    />
+      className="w-full sm:w-[211px] h-[75px] border border-black rounded-md mt-2" />
   </div>
-</div>
-
-      </div>
+ </div>
+  </div>
 
     
       <div className="mt-4">
@@ -84,20 +89,21 @@ const CheckOutPage = () => {
         <input
           id="company-name"
           type="text"
-          className="w-full lg:w-[453px] h-[75px] border border-black rounded-md mt-2"
-        />
+          className="w-full lg:w-[453px] h-[75px] border border-black rounded-md mt-2"/>
       </div>
+
+
+
 
       {/* Country/Region */}
       <div className="mt-4 relative">
         <label htmlFor="country" className="block text-lg font-medium">
-          Country / Region
+        Country / Region
         </label>
         <input
           id="country"
           type="text"
-          className="w-full lg:w-[453px] h-[75px] border border-black rounded-md pl-4 pr-10 mt-2"
-        />
+          className="w-full lg:w-[453px] h-[75px] border border-black rounded-md pl-4 pr-10 mt-2" />
        <div className="relative w-full lg:w-[453px]">
       <label htmlFor="country" className="block text-lg font-medium">
        Select Country
@@ -113,10 +119,9 @@ const CheckOutPage = () => {
       <option value="aus">Australia</option>
   </select>
 </div>
+</div>
 
-      </div>
-
-    
+  
       <div className="mt-4">
         <label htmlFor="street-address" className="block text-lg font-medium">
           Street address

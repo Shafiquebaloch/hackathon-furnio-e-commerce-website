@@ -8,7 +8,7 @@ export default function ShopHeader() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={shopping}  // Corrected path with leading slash
+          src={shopping}  
           alt="Shop header background"
           fill
           className="object-cover brightness-95"

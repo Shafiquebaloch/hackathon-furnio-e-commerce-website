@@ -74,6 +74,7 @@ const BlogPage = () => {
             
             <h3 className="text-[#9F9F9F] text-sm lg:text-base">Wood</h3>
           </div>
+
           <h1 className="text-[20px] lg:text-[30px] font-semibold my-4">
             Going all-in with millennial design
           </h1>
@@ -158,14 +159,16 @@ const BlogPage = () => {
             ))}
           </div>
 
+
+
           {/* Recent Posts */}
           <h1 className="text-[24px] font-semibold mb-8">Recent Posts</h1>
 {[
-  { src: pro1, title: 'Going all-in with millennial design' },
-  { src: pro2, title: 'Exploring new ways of decorating' },
-  { src: pro3, title: 'Handmade pieces that took time to make' },
-  { src: pro4, title: 'Modern home in Milan' },
-  { src: pro5, title: 'Colorful office redesign' },
+     { src: pro1, title: 'Going all-in with millennial design' },
+     { src: pro2, title: 'Exploring new ways of decorating' },
+     { src: pro3, title: 'Handmade pieces that took time to make' },
+     { src: pro4, title: 'Modern home in Milan' },
+     { src: pro5, title: 'Colorful office redesign' },
 ].map((post, index) => (
   <div key={index} className="flex items-center justify-between gap-8">
     <Image src={post.src} alt={`post${index + 1}`} width={80} height={80} />
@@ -178,22 +181,6 @@ const BlogPage = () => {
 
         </div>
       </div>
-  
-      
-
-      {/* Pagination */}
-      {/* <div className="flex items-center justify-center gap-2 lg:gap-8 mt-10 lg:mt-14">
-        {['1', '2', '3', 'Next'].map((item) => (
-          <div
-            key={item}
-            className={`w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] flex items-center justify-center ${item === '1' ? 'bg-[#B88E2F] text-white' : 'bg-[#F9F1E7]'
-              }`}
-          >
-            {item}
-          </div>
-        ))}
-      </div> */}
-      
     </>
   );
 };

@@ -109,9 +109,16 @@ const ContactPage = () => {
                     </button>
                 </div>
             </div>
-            <section className="bg-[#FDF8F7] py-12">
+
+
+
+
+
+        <section className="bg-[#FDF8F7] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+
           {/* High Quality */}
           <div className="flex flex-col items-center text-center">
             <div className="w-12 h-12 flex items-center justify-center mb-4">
@@ -124,6 +131,8 @@ const ContactPage = () => {
               crafted from top materials
             </p>
           </div>
+
+
 
           {/* Warranty Protection */}
           <div className="flex flex-col items-center text-center">
@@ -138,6 +147,9 @@ const ContactPage = () => {
             </p>
           </div>
 
+
+
+
           {/* Free Shipping */}
           <div className="flex flex-col items-center text-center">
             <div className="w-12 h-12 flex items-center justify-center mb-4">
@@ -151,10 +163,12 @@ const ContactPage = () => {
             </p>
           </div>
 
+
+
           {/* 24/7 Support */}
           <div className="flex flex-col items-center text-center">
             <div className="w-12 h-12 flex items-center justify-center mb-4">
-              <Headphones className="w-8 h-8 text-gray-800" />
+             <Headphones className="w-8 h-8 text-gray-800"/>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               24 / 7 Support

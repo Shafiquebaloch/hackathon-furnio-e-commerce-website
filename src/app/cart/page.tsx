@@ -68,6 +68,9 @@ const CartPage = () => {
                      <MdDelete className="cursor-pointer font-bold text-2xl" />
                     </div>
                 </div>
+
+
+                
                 <div className="bg-[#F9F1E7] w-full lg:w-[393px] h-auto lg:h-[390px] mt-8 lg:mt-0 p-6 rounded-lg flex flex-col items-center justify-center">
                     <h1 className="text-center text-[24px] lg:text-[32px] font-semibold mb-6">
                         Cart Totals
@@ -88,8 +91,8 @@ const CartPage = () => {
                 </div>
 
             </div>
-            turn (
-    <section className="bg-[#FDF8F7] py-12">
+            
+         <section className="bg-[#FDF8F7] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* High Quality */}
