@@ -27,7 +27,7 @@ const Furniture = () => {
           <Image
             src={product2}
             alt="Product 2"
-            width={451}
+            width={951}
             height={312}
             className="object-cover"
           />
@@ -38,8 +38,8 @@ const Furniture = () => {
           <Image
             src={product3}
             alt="Product 3"
-            width={295}
-            height={392}
+            width={895}
+            height={892}
             className="object-cover"
           />
         </div>
@@ -49,11 +49,11 @@ const Furniture = () => {
           <Image
             src={product4}
             alt="Product 4"
-            width={420}
+            width={920}
             height={348}
             className="object-cover mb-5 pt-8 lg:pt-32"
           />
-          <div className="flex justify-between gap-5">
+          <div className="flex justify-between gap-1">
             <Image
               src={product4}
               alt="Product 5"
@@ -64,8 +64,8 @@ const Furniture = () => {
             <Image
               src={product5}
               alt="Product 6"
-              width={258}
-              height={196}
+              width={160}
+              height={296}
               className="object-cover"
             />
           </div>
@@ -76,7 +76,7 @@ const Furniture = () => {
           <Image
             src={product6}
             alt="Product 7"
-            width={425}
+            width={785}
             height={433}
             className="object-cover"
           />

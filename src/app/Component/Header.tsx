@@ -26,7 +26,7 @@ const Navbar = () => {
           height={40}
           className="w-16 sm:w-20 h-auto"
         />
-        <div className="text-[20px] sm:text-[24px] lg:text-[28px] font-montserrat font-bold text-black hidden sm:block">
+        <div className="text-[20px] sm:text-[24px] lg:text-[28px] font-montserrat font-bold text-black">
           Furnio
         </div>
       </div>

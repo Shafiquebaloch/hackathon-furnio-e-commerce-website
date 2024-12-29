@@ -27,7 +27,7 @@ export default function FeaturesSection() {
             </h3>
             <p className="text-gray-500">
               Over 2 years
-            </p>
+            </p> 
           </div>
 
           {/* Free Shipping */}

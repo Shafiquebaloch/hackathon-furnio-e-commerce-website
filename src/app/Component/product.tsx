@@ -54,7 +54,11 @@ const product = () => {
             </span>
 
             <div className='absolute inset-0 bg-[#3A3A3A] bg-opacity-60 flex items-center justify-center flex-col'>
-              <button className='text-[#B88E2F] text-[16px] font-semibold bg-[#FFFFFF] w-[202px] h-[48px]'>Add to cart</button>
+              <Link href="../cart">
+              <button className='text-[#B88E2F] text-[16px] font-semibold bg-[#FFFFFF] w-[202px] h-[48px]'>
+                Add to cart
+                </button>
+              </Link>
               <div className='flex items-center justify-around gap-4 mt-6 text-[#FFFFFF]'>
                 <span>Share</span>
                 <span>Compare</span>
@@ -178,7 +182,7 @@ const product = () => {
         </div>
 
         <div className='flex items-center justify-center mt-6'>
-          <Link href={"/product"}>
+          <Link href={"../Shop"}>
           <button className="w-[245px] h-[48px] bg-[#FFFFFF] border border-[#B88E2F] text-[#B88E2F]">
             Show More
           </button>

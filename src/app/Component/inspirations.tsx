@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import inspirationImage1 from "../../../Public/Images/inspiration.png" // Renamed this import
-import inspirationImage2 from "../../../Public/Images/inspiration2.png" // Renamed this import
+import inspirationImage1 from "../../../Public/Images/inspiration.png" 
+import inspirationImage2 from "../../../Public/Images/inspiration2.png"  
 
-const Inspirations = () => {  // Renamed component to Inspirations
+const Inspirations = () => { 
   return (
     <div>
       <div className='h-auto bg-[#FCF8F3] mt-10 flex flex-col lg:flex-row items-center justify-around'>
-        <div className='text-center lg:text-left px-6 lg:px-0'>
+        <div className='text-center ml-16 sm:ml-0 sm:text-left lg:text-left px-6 lg:px-0'>
           <h1 className='text-[32px] sm:text-[36px] md:text-[40px] font-bold w-[90%] md:w-[422px]'>
             50+ Beautiful rooms inspiration
           </h1>
@@ -37,6 +37,12 @@ const Inspirations = () => {  // Renamed component to Inspirations
             height={486}
             className="w-full lg:w-[372px] lg:h-[486px]"
           />
+           <div className="flex gap-2 mt-8 justify-center">
+          <div className="w-2 h-2 rounded-full bg-[#B8860B]"></div>
+         <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+         <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+        <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+       </div>
         </div>
       </div>
     </div>  

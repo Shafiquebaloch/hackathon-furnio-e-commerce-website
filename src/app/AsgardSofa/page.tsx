@@ -125,11 +125,11 @@ const AsgaardPage = () => {
                             <span className="px-4">1</span>
                             <button className="px-3">+</button>
                         </div>
-                       
+                        <Link href="/cart">
                         <button className="w-[123px] h-[64px] rounded-2xl border border-black mt-4 sm:mt-0 sm:ml-3">
                             Add To Cart
                         </button>
-                    
+                        </Link>
                         <button className="w-52 h-16 bg-transparent text-black rounded-2xl border border-black flex items-center justify-center gap-2 mt-4 sm:mt-0 sm:ml-3">
                             <Link href="/product-comparison">
                             <span>+</span>
