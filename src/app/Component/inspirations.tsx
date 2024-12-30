@@ -15,7 +15,7 @@ const Inspirations = () => {
             Our designer already made a lot of beautiful prototypes of rooms that inspire you.
           </p>
           <button className='w-[70%] md:w-[176px] h-[48px] bg-[#B88E2F] text-[#FFFFFF] mt-8'>
-            Explore More
+            Explore More..
           </button>
         </div>
 
